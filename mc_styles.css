@@ -1,4 +1,21 @@
 html {
-    background: url(save.jpeg) no-repeat;
+    background: url(classy.jpeg) no-repeat;
     background-size: cover;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-filter: opacity(75%);
+    filter: opacity(75%);
+}
+
+fieldset {
+    border: dotted;
+}
+
+legend {
+    text-align: center;
 }
