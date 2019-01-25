@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 html {
     background: url(classy.jpeg) no-repeat;
     background-size: cover;
@@ -8,14 +10,89 @@ body {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    -webkit-filter: opacity(75%);
-    filter: opacity(75%);
+    -webkit-filter: opacity(77%);
+    filter: opacity(77%);
+    padding: 20px;
 }
 
 fieldset {
+    border: solid;
+    padding: 20px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+fieldset.left {
+    width: 45%;
+    float: left;
+    padding: 20px;
     border: dotted;
+}
+
+fieldset.right {
+    width: 95%;
+    float: left;
+    padding: 20px 0px 20px 15px;
+    border: dotted;
+}
+
+div.left > input {
+    float: right;
+}
+
+div#right {
+    float: right;
+    height: 100%;
+    padding: 0px;
+    margin: auto;
+    line-height: 1.45em;
+}
+
+header img#logoimgl {
+    display: block;
+    width: 20%;
+    margin: 0;
+    float: left;
+    padding: 0 0 0 50px;
+}
+
+header img#logoimgr {
+    display: block;
+    width: 20%;
+    margin: 0;
+    float: right;
+    padding: 0 50px 0 0;
+}
+
+h1#logoname {
+    font-family: 'Amatic SC', cursive;
+    font-size: 4.4em;
+    float: center;
+    width: 60%;
+    padding: 75px 0 0 95px;
+    margin: auto;
 }
 
 legend {
     text-align: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 1.6em;
+}
+
+label {
+   font-family: 'Dancing Script', cursive;
+   font-size: 1.2em;
+   letter-spacing: 2px;
+}
+
+fieldset.left input {
+    width: 45%;
+}
+
+fieldset.yesno {
+    border: none;
+    padding: 0;
+    width: 30%;
+    margin: 0;
 }
