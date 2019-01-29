@@ -20,41 +20,49 @@
 
 </head>
 <body>
+    <!-- Added new logos since the last logo didnt go with the layout design, created by mwah. -->
     <header>
         <img id="logoimgl" src="Millenium_Computers.png" alt="Millennium Computers">
         <img id="logoimgr" src="Millenium_Computers.png" alt="Millennium Computers">
         <h1 id="logoname">Millennium Computers</h1>
     </header>
     
+    <!-- Created a form that the user must fill. -->
     <form name="cForm" action="http://www.mill_computers.com/orders/process.cgi" method="POST">
 
+        <!-- Named this set of info Cunstomer Info, where the user fills it out with their personal info, name, adress, ect. -->
         <fieldset class="custInfo">
             <legend>Customer Information</legend>
 
+            <!-- First name field, where the user inputs their real first name since it is required. -->
             <fieldset class="left">
                 <div class="left">
                 <label for="fName">First Name</label>
                 <input name="fName" id="fName" type="text" placeholder="Margerate" required />
             </div>
 
+            <!-- Last name field, where the user inputs their real last name since it is required. -->
             <div class="left">
                 <label for="lName">Last Name</label>
                 <input name="lName" id="lName" type="text" placeholder="Sudinette" required />
             </div>
 
+            <!-- State field, where the user inputs the street where they live, since its required. -->
             <div class="left">
                 <label for="street">Street</label>
                 <input name="street" id="street" type="text" required />
             </div>
 
+            <!-- City field, where the user inputs the city where they live, sice its required. -->
             <div class="left">
                 <label for="city">City</label>
                 <input name="city" id="city" type="text" value="Glendale" required />
             </div>
 
+            <!-- State field, where the user inputs the state where they live, sice its required. Although, this comes with a list of all the  -->
             <div class="left">
                 <label for="state">State</label>
-                <input name="state" id="state" type="text" list="statelist" placeholder="AZ" required />
+                <input name="state" id="state" type="text" size="" list="statelist" placeholder="AZ" required />
                 <datalist id="statelist">
                     <option value="AL"></option>
                     <option value="AK"></option>
@@ -138,7 +146,7 @@
             <legend>Create A Computer</legend>
 
             <fieldset class="left">
-                <div>
+                <div class="left">
                 <label for="pspeed">Processor Speed</label>
                 <input name="pspeed" id="pspeed" type="text" list="pspeedlist" required />
                 <datalist id="pspeedlist">
@@ -148,9 +156,9 @@
                 </datalist>
             </div>
 
-            <div>
+            <div class="left">
                 <label for="mem">Memory</label>
-                <input name="mem" id="mem" type="text" list="memlist" required />
+                <input name="mem" id="mem" class="" type="text" list="memlist" required />
                 <datalist id="memlist">
                     <option value="1 GB">1 GB</option>
                     <option value="2 GB">2 GB</option>
@@ -159,7 +167,7 @@
                 </datalist>
             </div>
 
-            <div>
+            <div class="left">
                 <label for="monsize">Monitor Size</label>
                 <input name="monsize" id="monsize" type="text" list="monsizelist" required />
                 <datalist id="monsizelist">
@@ -170,7 +178,7 @@
                 </datalist>
             </div>
 
-            <div>
+            <div class="left">
                 <label for="hdrive">Hard Drive</label>
                 <input name="hdrive" id="hdrive" type="text" list="hdrivelist" required />
                 <datalist id="hdrivelist">
@@ -181,15 +189,35 @@
                 </datalist>
             </div>
 
-            <!-- <div>
-                <label for="dvd">DVD Burner</label>
+            <div id="yesno">
+                <label class="yesno" for="dvd">DVD Burner</label>
                 <fieldset class="yesno">
                     <label for="yes">Yes</label>
                     <input name="dvd" id="yes" type="radio" value="yes">
-                    <label for="no">No</label>
+                    <label id="no" for="no">No</label>
                     <input name="dvd" id="no" type="radio" value="no">
                 </fieldset>
-            </div> -->
+            </div>
+
+            <div id="yesno">
+                <label class="yesno" for="tcard">Tuner Card</label>
+                <fieldset class="yesno">
+                    <label for="yes">Yes</label>
+                    <input name="tcard" id="yes" type="radio" value="yes">
+                    <label id="no" for="no">No</label>
+                    <input name="tcard" id="no" type="radio" value="no">
+                </fieldset>
+            </div>
+
+            <div id="yesno">
+                    <label class="yesno" for="mcread">Media Card</label>
+                    <fieldset class="yesno">
+                        <label for="yes">Yes</label>
+                        <input name="mcread" id="yes" type="radio" value="yes">
+                        <label id="no" for="no">No</label>
+                        <input name="mcread" id="no" type="radio" value="no">
+                    </fieldset>
+                </div>
             </fieldset>
 
             <div id="right">
